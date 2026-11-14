@@ -1,0 +1,311 @@
+/**
+ * ==============================================================================
+ * NEXO LINX DESIGN SYSTEM - GLOBAL STYLES & FOUNDATIONS
+ * ==============================================================================
+ */
+
+/* 1. Global Box-Sizing & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-pure-white);
+  overflow-x: clip;
+  position: relative;
+}
+
+/* 2. Selection Styling */
+::selection {
+  background-color: var(--color-brand-primary);
+  color: var(--color-pure-white);
+}
+
+::-moz-selection {
+  background-color: var(--color-brand-primary);
+  color: var(--color-pure-white);
+}
+
+/* 3. Link Foundations */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-brand);
+}
+
+a:hover {
+  color: var(--color-brand-light);
+}
+
+/* 4. Button Foundations */
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  transition: all var(--duration-normal) var(--ease-brand);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* 5. Accessible Focus Indicators */
+:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 3px;
+}
+
+/* 6. Image & Media Defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Layout Containers */
+.site-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-gutter-mobile);
+  padding-right: var(--page-gutter-mobile);
+}
+
+@media (min-width: 768px) {
+  .site-container {
+    padding-left: var(--page-gutter-tablet);
+    padding-right: var(--page-gutter-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    padding-left: var(--page-gutter-desktop);
+    padding-right: var(--page-gutter-desktop);
+  }
+}
+
+/* 8. Section Background Transitions */
+.section-transition-dark-to-light {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #030304 8%,
+    #080809 16%,
+    #111112 24%,
+    #1e1e1f 32%,
+    #353534 40%,
+    #565652 48%,
+    #7e7e78 55%,
+    #a5a59d 62%,
+    #c4c4bb 70%,
+    #dad9d0 78%,
+    #e8e7de 86%,
+    #f2f1ea 93%,
+    #F9F8F4 100%
+  );
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .section-transition-dark-to-light {
+    height: 54px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-transition-dark-to-light {
+    height: 66px;
+  }
+}
+
+.section-transition-light-to-dark {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(
+    to bottom,
+    #F9F8F4 0%,
+    #f2f1ea 7%,
+    #e8e7de 14%,
+    #dad9d0 22%,
+    #c4c4bb 30%,
+    #a5a59d 38%,
+    #7e7e78 45%,
+    #565652 52%,
+    #353534 60%,
+    #1e1e1f 68%,
+    #111112 76%,
+    #080809 84%,
+    #030304 92%,
+    #000000 100%
+  );
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .section-transition-light-to-dark {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-transition-light-to-dark {
+    height: 72px;
+  }
+}
+
+/* 9. Section Foundations */
+.site-section {
+  position: relative;
+  width: 100%;
+  padding-top: var(--section-spacing-mobile);
+  padding-bottom: var(--section-spacing-mobile);
+}
+
+@media (min-width: 768px) {
+  .site-section {
+    padding-top: var(--section-spacing-tablet);
+    padding-bottom: var(--section-spacing-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-section {
+    padding-top: var(--section-spacing-desktop);
+    padding-bottom: var(--section-spacing-desktop);
+  }
+}
+
+/* 9. Brand Utility Classes */
+.bg-brand-primary {
+  background-color: var(--color-brand-primary);
+}
+
+.text-brand-primary {
+  color: var(--color-brand-primary);
+}
+
+.border-brand-primary {
+  border-color: var(--color-brand-primary);
+}
+
+.glow-brand {
+  box-shadow: var(--shadow-brand-glow);
+}
+
+.glow-brand-lg {
+  box-shadow: var(--shadow-brand-glow-lg);
+}
+
+/* 10. Glassmorphism Surface Foundations */
+.glass-surface {
+  background-color: var(--color-bg-glass);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+  border: 1px solid var(--color-border-muted);
+}
+
+.glass-card {
+  background-color: var(--color-bg-card-dark);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+  transition: border-color var(--duration-normal) var(--ease-brand),
+              transform var(--duration-normal) var(--ease-brand),
+              box-shadow var(--duration-normal) var(--ease-brand);
+}
+
+.glass-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-brand-glow);
+}
+
+/* 11. Hero Section Animations & Ticker */
+@keyframes heroFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(8px, -12px, 0) scale(1.02) rotate(1deg);
+  }
+  66% {
+    transform: translate3d(-10px, 8px, 0) scale(0.99) rotate(-1deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+}
+
+.animate-hero-float {
+  animation: heroFloat 14s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes heroTabFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-float {
+    animation: none !important;
+  }
+  .animate-marquee {
+    animation: none !important;
+    overflow-x: auto;
+  }
+}

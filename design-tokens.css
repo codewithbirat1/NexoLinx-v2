@@ -1,0 +1,154 @@
+/**
+ * ==============================================================================
+ * NEXO LINX DESIGN SYSTEM - DESIGN TOKENS
+ * ==============================================================================
+ * Centralized design token system using CSS Custom Properties.
+ * Authoritative color source: Official Nexo Linx Brand Identity
+ */
+
+:root {
+  /* ============================================================================
+   * 1. BRAND COLORS (OFFICIAL PALETTE)
+   * ============================================================================ */
+  --color-brand-primary: #1374DF;         /* Primary Action, Links, Focus & Highlights */
+  --color-brand-hover: #0F65C5;           /* Hover / Active Interaction State */
+  --color-brand-light: #E8F2FF;           /* Subtle Tint / Highlights */
+  --color-brand-glow: rgba(19, 116, 223, 0.35); /* Glow accents & depth */
+  --color-brand-muted: rgba(19, 116, 223, 0.12);/* Pill badges & soft backgrounds */
+
+  /* Neutral Monochrome Palette */
+  --color-pure-black: #000000;            /* Brand Contrast Anchor */
+  --color-pure-white: #FFFFFF;            /* Contrast Anchor & Crisp Highlights */
+  --color-text-secondary: #888888;        /* Supporting / Subtitle Text */
+  --color-border-subtle: #252525;         /* Standard Dark Border */
+  --color-border-muted: rgba(255, 255, 255, 0.08); /* Frosted Border for Glassmorphism */
+  --color-border-hover: rgba(19, 116, 223, 0.4);  /* Interactive border state */
+
+  /* Surface & Background Colors */
+  --color-bg-primary: #000000;            /* Default App Background */
+  --color-bg-surface-dark: #080809;       /* Section Dark Surface */
+  --color-bg-card-dark: #0F0F12;          /* Elevated Card Surface */
+  --color-bg-card-hover: #151518;         /* Card Hover Surface */
+  --color-bg-glass: rgba(15, 15, 18, 0.75);/* Frosted Glass Overlay */
+
+  /* Light Section Colors */
+  --color-bg-light: #FFFFFF;              /* Light Section Background */
+  --color-bg-light-surface: #F8FAFC;      /* Light Card / Section Alt */
+  --color-border-light: #E2E8F0;          /* Light Section Border */
+  --color-text-dark: #0A0A0B;             /* Primary Text on Light Sections */
+  --color-text-muted-dark: #64748B;       /* Secondary Text on Light Sections */
+
+  /* ============================================================================
+   * 2. TYPOGRAPHY TOKENS
+   * ============================================================================ */
+  --font-family-primary: var(--font-inter-tight), "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 64px;
+
+  /* Line Heights */
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.25;
+  --line-height-base: 1.3125;             /* 21px / 16px */
+  --line-height-relaxed: 1.5;
+  --line-height-loose: 1.7;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.03em;
+  --letter-spacing-tight: -0.015em;
+  --letter-spacing-normal: normal;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-wider: 0.08em;
+
+  /* ============================================================================
+   * 3. SPACING TOKENS (STRICT SPECIFICATION)
+   * ============================================================================ */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+
+  /* ============================================================================
+   * 4. LAYOUT & CONTAINER TOKENS
+   * ============================================================================ */
+  --container-max-width: 1240px;
+  --page-gutter-mobile: 16px;
+  --page-gutter-tablet: 24px;
+  --page-gutter-desktop: 32px;
+  --section-spacing-mobile: 48px;
+  --section-spacing-tablet: 80px;
+  --section-spacing-desktop: 96px;
+  --grid-gap-sm: 16px;
+  --grid-gap-md: 24px;
+  --grid-gap-lg: 32px;
+
+  /* ============================================================================
+   * 5. RESPONSIVE BREAKPOINT TOKENS (REFERENCE)
+   * ============================================================================ */
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-large-desktop: 1440px;
+
+  /* ============================================================================
+   * 6. EFFECTS, ELEVATION & VISUAL STYLING
+   * ============================================================================ */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 28px -6px rgba(0, 0, 0, 0.7);
+  --shadow-brand-glow: 0 0 24px -4px rgba(19, 116, 223, 0.4);
+  --shadow-brand-glow-lg: 0 0 44px -8px rgba(19, 116, 223, 0.5);
+
+  /* Backdrop Filters (Glassmorphism) */
+  --blur-glass: blur(12px);
+  --blur-heavy: blur(24px);
+
+  /* Transitions & Animation Timings */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --ease-brand: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 2px #000000, 0 0 0 4px #1374DF;
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-card: 10;
+  --z-sticky: 100;
+  --z-nav: 500;
+  --z-dropdown: 600;
+  --z-modal: 1000;
+  --z-toast: 1100;
+}
