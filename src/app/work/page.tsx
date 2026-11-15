@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { WorkHeroAndGallery} from '@/components/sections/Work';
 import { Partners } from '@/components/sections/Partners';
 import { BusinessContact } from '@/components/sections/BusinessContact';
+import { ContactSection } from '@/components/sections/Contact';
 
 export const metadata: Metadata = {
   title: 'Work & Case Studies | Nexo Linx - Selected Digital Products',
@@ -19,8 +20,9 @@ export default function WorkPage() {
       {/* 2. Brand & Enterprise Partners Marquee */}
       <Partners />
 
+       <ContactSection />
 
-      {/* 4. Let's Talk About Your Business (Local Office Contact Bridge) */}
+             {/* 4. Let's Talk About Your Business (Local Office Contact Bridge) */}
       <BusinessContact />
     </main>
   );

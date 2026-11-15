@@ -10,7 +10,7 @@ import {
 } from '@/components/sections/About';
 import { Partners } from '@/components/sections/Partners';
 import { BusinessContact } from '@/components/sections/BusinessContact';
-
+import { ContactSection } from '@/components/sections/Contact';
 export const metadata: Metadata = {
   title: 'About Us | Nexo Linx - Digital Products That Scale Businesses',
   description:
@@ -41,8 +41,9 @@ export default function AboutPage() {
       {/* 7. What Makes Us Different From Others */}
       <AboutDifferentiators />
 
-      {/* 8. Business Contact / Inquiry Bridge */}
-      <BusinessContact />
+      <ContactSection />
+
+ 
     </main>
   );
 }
