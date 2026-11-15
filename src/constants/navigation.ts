@@ -215,7 +215,7 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   {
     label: 'About',
-    href: '#about',
+    href: '/about',
   },
   {
     label: 'Services',
@@ -223,16 +223,16 @@ export const NAV_ITEMS: NavItem[] = [
     isServices: true,
   },
   {
-    label: 'AI Solutions',
-    href: '#ai-solutions',
+    label: 'Team',
+    href: '/team',
   },
   {
     label: 'Work',
-    href: '#work',
+    href: '/work',
   },
   {
     label: 'Industries',
-    href: '#industries',
+    href: '/industries',
   },
   {
     label: 'Insights',

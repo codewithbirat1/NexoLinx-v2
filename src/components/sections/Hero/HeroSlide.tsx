@@ -57,7 +57,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
       role="tabpanel"
       id={`hero-panel-${slide.id}`}
       aria-labelledby={`hero-tab-${slide.id}`}
-      className={`hero-slide transition-all duration-500 ease-out flex flex-col items-center text-center ${
+      className={`hero-slide transform-gpu transition-[opacity,transform] duration-500 ease-out flex flex-col items-center text-center ${
         isActive
           ? 'opacity-100 scale-100 pointer-events-auto visible'
           : 'opacity-0 scale-[0.98] pointer-events-none invisible absolute inset-0'
@@ -66,32 +66,24 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
       {/* Heading Container with Relative Tilted Badge */}
       <div className="relative mx-auto w-full max-w-5xl px-0 sm:px-2">
         <h1 className="mx-auto max-w-5xl text-[clamp(1.5rem,7.5vw,3rem)] font-extrabold uppercase leading-[1.06] tracking-tight text-white drop-shadow-sm sm:text-5xl md:text-6xl lg:text-[68px]">
-          {isActive ? (
-            slide.heading.map((line, idx) => (
-              <React.Fragment key={`${slide.id}-line-${idx}`}>
-                <TextEffect
-                  as="span"
-                  per="char"
-                  preset="fade"
-                  delay={idx * 0.15}
-                  speedReveal={1.4}
-                  className="inline-block"
-                >
-                  {line}
-                </TextEffect>
-                {idx < slide.heading.length - 1 && <br className="hidden sm:inline" />}
-                {idx < slide.heading.length - 1 && ' '}
-              </React.Fragment>
-            ))
-          ) : (
-            slide.heading.map((line, idx) => (
-              <React.Fragment key={idx}>
+          {slide.heading.map((line, idx) => (
+            <React.Fragment key={`${slide.id}-line-${idx}`}>
+              <TextEffect
+                as="span"
+                per="word"
+                preset="slide"
+                delay={idx * 0.20}
+                speedReveal={1}
+                speedSegment={1.5}
+                trigger={isActive}
+                className="inline-block"
+              >
                 {line}
-                {idx < slide.heading.length - 1 && <br className="hidden sm:inline" />}
-                {idx < slide.heading.length - 1 && ' '}
-              </React.Fragment>
-            ))
-          )}
+              </TextEffect>
+              {idx < slide.heading.length - 1 && <br className="hidden sm:inline" />}
+              {idx < slide.heading.length - 1 && ' '}
+            </React.Fragment>
+          ))}
         </h1>
 
         {/* Tilted Tag Badge on Top Right */}
@@ -121,14 +113,14 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
         {/* Primary CTA Button */}
         <Link
           href={slide.primaryCta.href}
-          className="group relative inline-flex w-full max-w-[280px] items-center justify-center rounded-full bg-white px-5 py-3.5 text-base font-semibold tracking-tight text-black shadow-lg shadow-black/40 transition-all duration-300 hover:scale-[1.02] hover:bg-[#E8F2FF] hover:text-[#0F65C5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] sm:w-auto sm:px-8 md:text-[17px]"
+          className="group relative inline-flex w-full max-w-[280px] items-center justify-center rounded-full bg-white px-5 py-3.5 text-base font-semibold tracking-tight text-black shadow-lg shadow-black/40 transition-[transform,background-color,color] duration-300 ease-out hover:scale-[1.02] hover:bg-[#E8F2FF] hover:text-[#0F65C5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] sm:w-auto sm:px-8 md:text-[17px]"
         >
           {slide.primaryCta.hoverLabel ? (
             <>
-              <span className="transition-transform duration-300 group-hover:-translate-y-6 group-hover:opacity-0 block">
+              <span className="block transition-[transform,opacity] duration-300 ease-out group-hover:-translate-y-6 group-hover:opacity-0">
                 {slide.primaryCta.label}
               </span>
-              <span className="absolute inset-0 flex items-center justify-center gap-2 translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+              <span className="absolute inset-0 flex translate-y-6 items-center justify-center gap-2 opacity-0 transition-[transform,opacity] duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100">
                 <Image
                   src="/assets/hero/lets-talk.svg"
                   alt="Avatar"
@@ -147,7 +139,7 @@ export function HeroSlide({ slide, isActive }: HeroSlideProps) {
         {/* Secondary CTA Button */}
         <Link
           href={slide.secondaryCta.href}
-          className="group inline-flex w-full max-w-[280px] items-center justify-center gap-2 rounded-full border border-[#2F2F35] bg-black/40 px-5 py-3.5 text-base font-semibold tracking-tight text-white backdrop-blur-md transition-all duration-300 hover:scale-[1.02] hover:border-[#1374DF] hover:bg-white/[0.04] hover:text-[#1374DF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] sm:w-auto sm:px-8 md:text-[17px]"
+          className="group inline-flex w-full max-w-[280px] items-center justify-center gap-2 rounded-full border border-[#2F2F35] bg-black/40 px-5 py-3.5 text-base font-semibold tracking-tight text-white backdrop-blur-md transition-[transform,border-color,background-color,color] duration-300 ease-out hover:scale-[1.02] hover:border-[#1374DF] hover:bg-white/[0.04] hover:text-[#1374DF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] sm:w-auto sm:px-8 md:text-[17px]"
         >
           <span>{slide.secondaryCta.label}</span>
           <span className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-sm">

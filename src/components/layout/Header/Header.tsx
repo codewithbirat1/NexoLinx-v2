@@ -94,13 +94,15 @@ export function Header() {
         </div>
 
         {/* Center Desktop Navigation */}
-        <div className="hidden lg:flex items-center justify-center flex-1 px-8">
-          <DesktopNav
-            isServicesOpen={isServicesOpen}
-            onMouseEnterServices={openServicesMenu}
-            onMouseLeaveServices={closeServicesMenuWithDelay}
-            onToggleServices={toggleServicesMenu}
-          />
+        <div className="hidden lg:flex flex-1 items-center justify-center">
+          <div className="rounded-full border border-white/10 bg-white/[0.06] px-6 py-2 backdrop-blur-xl">
+            <DesktopNav
+              isServicesOpen={isServicesOpen}
+              onMouseEnterServices={openServicesMenu}
+              onMouseLeaveServices={closeServicesMenuWithDelay}
+              onToggleServices={toggleServicesMenu}
+            />
+          </div>
         </div>
 
         {/* Right Action Elements */}

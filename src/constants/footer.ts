@@ -65,7 +65,8 @@ export const FOOTER_NAV_COLUMNS: FooterNavColumn[] = [
     title: 'Company',
     links: [
       { label: 'Home', href: '/' },
-      { label: 'About', href: '#about' },
+      { label: 'About', href: '/about' },
+      { label: 'Team', href: '/team' },
       { label: 'Work', href: '#work' },
       { label: 'Contact', href: '#contact' },
       { label: 'Insights', href: '#insights' },

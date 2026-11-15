@@ -123,19 +123,19 @@ export function BusinessContact({
             return (
               <div
                 key={card.id}
-                className={`group relative rounded-2xl border p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 ${
+                className={`group relative rounded-2xl border p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-0.5 ${
                   hasGlow
-                    ? 'border-white/15 bg-gradient-to-b from-white/[0.04] to-transparent hover:border-[#1374DF]/60'
-                    : 'border-white/10 bg-white/[0.02] hover:border-[#1374DF]/40'
+                    ? 'border-white/15 bg-[#0C1019] hover:border-[#1374DF]/60'
+                    : 'border-white/10 bg-[#0B0B0C] hover:border-[#1374DF]/40'
                 }`}
               >
                 {/* Subtle dark-blue radial glow on hover */}
                 <div
                   aria-hidden="true"
-                  className={`pointer-events-none absolute -inset-0.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                  className={`pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
                     hasGlow
-                      ? 'bg-[radial-gradient(circle_at_center,rgba(19,116,223,0.22),transparent_70%)]'
-                      : 'bg-[radial-gradient(circle_at_center,rgba(19,116,223,0.14),transparent_70%)]'
+                      ? 'bg-[radial-gradient(circle_at_center,rgba(19,116,223,0.18),transparent_70%)]'
+                      : 'bg-[radial-gradient(circle_at_center,rgba(19,116,223,0.1),transparent_70%)]'
                   }`}
                 />
 
