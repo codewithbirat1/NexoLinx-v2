@@ -22,13 +22,13 @@ export function Services() {
         {/* Section Header Introduction */}
         <div className="mx-auto mb-8 flex max-w-4xl flex-col items-center text-center sm:mb-6 md:mb-8">
           <span className="mb-2 text-sm font-semibold tracking-[0.14em] uppercase text-[#1374DF] sm:mb-3 lg:text-base">
-            WE ARE GREAT AT
+            WHAT WE DO
           </span>
           <h2 className="max-w-3xl px-1 text-[clamp(1.75rem,6vw,3.375rem)] font-bold leading-[1.12] tracking-tight text-[#111111]">
-            UI UX Design and Product Experience Services
+            Comprehensive Technology & Digital Solutions
           </h2>
           <p className="mt-2 text-sm font-normal tracking-tight text-[#666666] sm:mt-3 sm:text-base md:text-xl">
-            Designs with Exceptional User Experiences
+            Building modern, reliable, and scalable digital products for ambitious brands
           </p>
         </div>
 

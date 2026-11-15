@@ -31,12 +31,12 @@ export const BUSINESS_CONTACT_DATA: BusinessContactData = {
     {
       id: 'visit-us',
       title: 'Visit Us',
-      description: 'Tillottama-4, Rupandehi, Nepal',
+      description: 'Tilottama-4, Dinganagar, Rupandehi, Nepal',
       icon: 'mapPin',
       links: [
         {
           label: 'Get Directions',
-          href: 'https://maps.google.com/?q=Tillottama-4,+Rupandehi,+Nepal',
+          href: 'https://maps.google.com/?q=Tilottama-4,+Dinganagar,+Rupandehi,+Nepal',
           isExternal: true,
           ariaLabel: 'Get directions to Nexo Linx office on Google Maps',
         },
@@ -70,9 +70,9 @@ export const BUSINESS_CONTACT_DATA: BusinessContactData = {
       icon: 'mail',
       links: [
         {
-          label: 'hello@nexolinx.com',
-          href: 'mailto:hello@nexolinx.com',
-          ariaLabel: 'Send an email to hello@nexolinx.com',
+          label: 'info@nexolinx.com',
+          href: 'mailto:info@nexolinx.com',
+          ariaLabel: 'Send an email to info@nexolinx.com',
         },
       ],
     },

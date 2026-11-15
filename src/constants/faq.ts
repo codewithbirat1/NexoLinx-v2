@@ -18,37 +18,36 @@ export const FAQ_HEADER: FaqHeaderData = {
   eyebrow: 'FAQS',
   title: "Questions? We've Got Answers",
   description:
-    'ZeeFrames reduces design complexity & speeds up product launches with clear UX workflows, scalable visual systems, and no-code execution.',
+    'Nexo Linx provides end-to-end IT services, custom software, web and mobile app development, and digital marketing in Butwal, Tilottama, and beyond.',
   buttonLabel: 'Book a free call',
-  buttonHref: '#contact',
-  reviewCount: '8 REVIEWS',
+  buttonHref: 'https://calendly.com/biratpandey9/new-meeting',
+  reviewCount: '15+ PROJECTS',
   reviewScore: '5.0',
 };
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    id: 'what-is-ui-ux-design',
-    question: 'What is UI UX design, and why is it important?',
+    id: 'what-services-does-nexolinx-provide',
+    question: 'What services does Nexo Linx provide?',
     answer:
-      'UX design, or user experience design, is designing digital products that are easy to use and provide a positive experience for the user. It is important because a good UX design can increase user satisfaction, engagement, and conversions.',
+      'We provide complete digital solutions including custom Web Design & Development (Next.js, React, Node.js), Native & Cross-Platform Mobile App Development (React Native), Custom Software & ERP Systems, UI/UX Design & Branding in Figma, SEO Optimization, and Digital Marketing.',
   },
   {
-    id: 'ux-design-process-and-timeline',
-    question: 'What is the UX design process, and how long does it take?',
+    id: 'where-is-nexolinx-located',
+    question: 'Where is Nexo Linx located and do you work with remote/international clients?',
     answer:
-      'Our UX design process typically spans 4 to 12 weeks depending on scope, starting with discovery and user research, moving into information architecture and wireframing, high-fidelity UI design systems, and rigorous usability testing before development handoff.',
+      'Our headquarters is located at Tilottama-4, Dinganagar, Rupandehi (Butwal area), Lumbini, Nepal. We work with both local enterprises across Nepal and international clients worldwide across the US, UK, Australia, and Asia.',
   },
   {
-    id: 'types-of-ux-services',
-    question: 'What types of UX design services do you offer?',
+    id: 'project-timeline-and-process',
+    question: 'What is the development timeline for a new project?',
     answer:
-      'We offer comprehensive end-to-end design solutions including UX research, heuristic audits, user journey mapping, wireframing, SaaS product design, cross-platform mobile app UI/UX, scalable design systems, and seamless no-code implementation.',
+      'Timelines vary depending on project complexity. Standard business websites and landing experiences typically take 2 to 4 weeks, while complex full-stack web platforms, mobile apps, and SaaS systems range between 6 to 12 weeks with structured sprint milestones and weekly check-ins.',
   },
   {
-    id: 'how-zeeframes-differs',
-    question: 'How does ZeeFrames UI UX Design differ from other design solutions?',
+    id: 'how-nexolinx-differs',
+    question: 'How does Nexo Linx differ from other IT companies?',
     answer:
-      'We combine rigorous research-driven usability frameworks with agile production speed. Unlike traditional agencies, we integrate deep SaaS workflows, battle-tested design tokens, and direct developer handoff to ensure measurable business conversions.',
+      'We focus on product-first thinking, clean architecture, and measurable ROI rather than generic templates. We combine technical rigor (Next.js, TypeScript, cloud deployments) with high-end modern design, complete transparency, and dedicated post-launch support.',
   },
-
 ];

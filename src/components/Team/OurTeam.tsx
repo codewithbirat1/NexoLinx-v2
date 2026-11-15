@@ -252,25 +252,25 @@ export const DEFAULT_MEMBERS: TeamMember[] = [
     name: "Sushant Gautam",
     role: "Chief Executive Officer",
     craft: "Leadership",
-    bio: " ",
+    bio: "Leading company vision, strategic growth, and high-impact partnerships.",
     photo: "/assets/team/ceo.avif",
     focus: "50% 30%",
-    href: "#"
+    href: "https://www.linkedin.com/company/nexolinx"
   },
   {
     name: "Birat Pandey",
     role: "Chief Technology Officer",
-    craft: "Development",
-    bio: " ",
+    craft: "Architecture",
+    bio: "Spearheading cloud architectures, technical standards, and full-stack innovation.",
     photo: "/assets/team/cto.svg",
     focus: "50% 30%",
-    href: "#"
+    href: "https://calendly.com/biratpandey9/new-meeting"
   },
   {
     name: "Prashant Pandey",
     role: "Chief Operating Officer",
     craft: "Operations",
-    bio: " ",
+    bio: "Driving operational execution, agile delivery timelines, and client excellence.",
     photo: "/assets/team/coo.avif",
     focus: "50% 30%",
     href: "#"
@@ -279,7 +279,7 @@ export const DEFAULT_MEMBERS: TeamMember[] = [
     name: "Shrijan Pandey",
     role: "Chief Financial Officer",
     craft: "Finance & Design",
-    bio: " ",
+    bio: "Overseeing fiscal planning, resource allocation, and brand design direction.",
     photo: "/assets/team/cfo.avif",
     focus: "50% 30%",
     href: "#"
@@ -287,8 +287,8 @@ export const DEFAULT_MEMBERS: TeamMember[] = [
   {
     name: "Aadarsha Banjade",
     role: "Manager & Co-founder",
-    craft: "Marketing",
-    bio: " ",
+    craft: "Growth",
+    bio: "Co-founding strategic product initiatives, client relations, and market outreach.",
     photo: "/assets/team/manager.avif",
     focus: "50% 30%",
     href: "#"
@@ -296,17 +296,17 @@ export const DEFAULT_MEMBERS: TeamMember[] = [
   {
     name: "MD Shad Khan",
     role: "Development Lead",
-    craft: "Development",
-    bio: " ",
+    craft: "Engineering",
+    bio: "Engineering performant web architectures, user interfaces, and robust systems.",
     photo: "/assets/team/developer.avif",
     focus: "50% 30%",
     href: "#"
   },
   {
-    name: "Raunak Acharya",
-    role: "Marketing Assistant",
-    craft: "Marketing",
-    bio: " ",
+    name: "Bishnu Adhikari",
+    role: "Marketing Head",
+    craft: "Brand Strategy",
+    bio: "Directing omnichannel digital marketing strategies, SEO campaigns, and audience growth.",
     photo: "/assets/team/market1.avif",
     focus: "50% 30%",
     href: "#"
@@ -315,12 +315,20 @@ export const DEFAULT_MEMBERS: TeamMember[] = [
     name: "Sahil Khan",
     role: "Developer",
     craft: "Development",
-    bio: " ",
+    bio: "Building responsive web platforms, modern API microservices, and mobile apps.",
     photo: "/assets/team/dev1.avif",
     focus: "50% 30%",
     href: "#"
   },
-
+  {
+    name: "Raunak Acharya",
+    role: "Marketing Assistant",
+    craft: "Campaigns",
+    bio: "Supporting digital marketing operations, content creation, and client communications.",
+    photo: "/assets/team/market1.avif",
+    focus: "50% 30%",
+    href: "#"
+  },
 ];
 const useIsoLayoutEffect = typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect
 

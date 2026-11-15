@@ -11,7 +11,7 @@ export const PROCESS_HEADER = {
   eyebrow: "Our Process, Your Advantage",
   title: "From Idea To Execution",
   description:
-    "We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do.",
+    "We turn ambitious concepts into scalable, reliable digital platforms. We build with clean architecture, design with purpose, and engineer for measurable business growth.",
 };
 
 export const PROCESS_STEPS: ProcessStep[] = [

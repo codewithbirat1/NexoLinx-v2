@@ -45,7 +45,7 @@ export function ContactSection() {
     fullName: '',
     email: '',
     phone: '',
-    country: 'United States',
+    country: 'Nepal',
     message: '',
   });
 
@@ -96,7 +96,7 @@ export function ContactSection() {
         fullName: '',
         email: '',
         phone: '',
-        country: 'United States',
+        country: 'Nepal',
         message: '',
       });
     }, 1000);

@@ -1,15 +1,41 @@
 /**
  * Official Nexo Linx Brand Constants
+ * Sourced directly from nexolinx.com
  */
 
 export const BRAND_IDENTITY = {
   name: 'Nexo Linx',
-  tagline: 'Build • Optimize • Outrank.',
+  tagline: 'Your Tech Solution',
+  secondaryTagline: 'Build • Optimize • Outrank.',
   companyName: 'Nexo Linx Pvt. Ltd.',
+  established: '2024',
+  location: {
+    street: 'Tilottama-4, Dinganagar',
+    city: 'Butwal',
+    district: 'Rupandehi',
+    province: 'Lumbini',
+    country: 'Nepal',
+    postalCode: '32900',
+    fullAddress: 'Tilottama-4, Dinganagar, Rupandehi, Lumbini 32900, Nepal',
+    geo: {
+      latitude: 27.6891,
+      longitude: 83.4483,
+    },
+  },
   contact: {
     phone: '+977 9743406723',
+    alternatePhone: '+977 9749890500',
     email: 'info@nexolinx.com',
+    alternateEmail: 'nexolinxs@gmail.com',
     website: 'https://www.nexolinx.com',
+    calendly: 'https://calendly.com/biratpandey9/new-meeting',
+    whatsapp: 'https://wa.me/9779743406723',
+  },
+  socials: {
+    linkedin: 'https://www.linkedin.com/company/nexolinx',
+    facebook: 'https://www.facebook.com/nexolinx',
+    instagram: 'https://www.instagram.com/nexolinx',
+    twitter: 'https://twitter.com/nexolinx',
   },
   colors: {
     primaryBlue: '#1374DF',

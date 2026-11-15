@@ -223,20 +223,16 @@ export const NAV_ITEMS: NavItem[] = [
     isServices: true,
   },
   {
-    label: 'Team',
-    href: '/team',
-  },
-  {
     label: 'Work',
     href: '/work',
   },
   {
-    label: 'Industries',
-    href: '/industries',
+    label: 'Team',
+    href: '/team',
   },
   {
-    label: 'Insights',
-    href: '#insights',
+    label: 'Contact',
+    href: '/#contact',
   },
 ];
 
