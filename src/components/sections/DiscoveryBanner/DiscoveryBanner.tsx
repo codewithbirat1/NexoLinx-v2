@@ -21,7 +21,7 @@ export function DiscoveryBanner({
   return (
     <section
       aria-label="Book a free discovery call"
-      className="hidden lg:flex relative isolate w-full overflow-hidden py-6 text-[var(--color-text-dark)] sm:py-8 lg:py-10 "
+      className="hidden lg:flex relative isolate w-full overflow-hidden py-6 text-[var(--color-text-dark)] sm:py-12 lg:py-16 "
       style={{
         backgroundImage:
           'radial-gradient(circle at 12% 0%, var(--color-brand-light) 0%, var(--color-brand-primary) 58%)',

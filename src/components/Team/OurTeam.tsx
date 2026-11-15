@@ -1,5 +1,7 @@
 "use client"
 
+import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 import * as React from "react"
 
 /*
@@ -813,6 +815,7 @@ export default function OurTeam({
       data-static={still ? "" : undefined}
       data-offscreen={offscreen ? "" : undefined}
     >
+      
       <style>{css}</style>
       <svg className="dtr-defs" aria-hidden="true" focusable="false">
         <filter id={filterId} colorInterpolationFilters="sRGB">
@@ -835,6 +838,38 @@ export default function OurTeam({
 
       <div className="dtr-in">
         <div className="dtr-copy" ref={copyRef}>
+          <nav
+            className="mb-3 text-xs text-[var(--color-text-secondary)] pointer-events-auto"
+            aria-label="Breadcrumb"
+          >
+            <ol className="flex flex-wrap items-center gap-2 p-0 list-none">
+              <li>
+                <Link
+                  href="/"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+
+              <li>
+                <Link
+                  href="/insight"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  Insights
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+            </ol>
+          </nav>
           <h2 className="dtr-title" id={titleId} ref={titleRef}>
             {eyebrow ? <span className="dtr-eyebrow">{eyebrow} </span> : null}
             {lines.map((l, i) => (

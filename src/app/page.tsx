@@ -1,12 +1,12 @@
-import { Hero } from '@/components/sections/Hero';
-import { Partners } from '@/components/sections/Partners';
-import { Services } from '@/components/sections/Services';
-import { Process } from '@/components/sections/Process';
-import { ProjectShowcase } from '@/components/sections/ProjectShowcase';
-import { Faq } from '@/components/sections/Faq';
-import { ContactSection } from '@/components/sections/Contact';
-import { DiscoveryBanner } from '@/components/sections/DiscoveryBanner/DiscoveryBanner';
-import { BusinessContact } from '@/components/sections/BusinessContact';
+import { Hero } from "@/components/sections/Hero";
+import { Partners } from "@/components/sections/Partners";
+import { Services } from "@/components/Routes/Services";
+import { Process } from "@/components/sections/Process";
+import { ProjectShowcase } from "@/components/sections/ProjectShowcase";
+import { Faq } from "@/components/sections/Faq";
+import { ContactSection } from "@/components/sections/Contact";
+import { DiscoveryBanner } from "@/components/sections/DiscoveryBanner/DiscoveryBanner";
+import { BusinessContact } from "@/components/sections/BusinessContact";
 // import { ProjectCtaCard } from '@/components/sections/ProjectCtaCard/ProjectCtaCard';
 export default function HomePage() {
   return (
@@ -32,7 +32,7 @@ export default function HomePage() {
       {/* Project Showcase Section */}
       <ProjectShowcase />
 
-       {/* <ProjectCtaCard /> */}
+      {/* <ProjectCtaCard /> */}
       <DiscoveryBanner />
 
       {/* Frequently Asked Questions Section */}

@@ -8,6 +8,7 @@ import {
   SHOWCASE_HEADER,
 } from '@/constants/showcase';
 import { WORK_PAGE_HEADER, WORK_BENTO_PROJECTS } from '@/constants/work';
+import { ChevronRight } from 'lucide-react';
 
 /**
  * Repeating 5-card bento pattern (3 cols × 3 rows):
@@ -52,6 +53,38 @@ export function WorkHeroAndGallery() {
       />
 
       <div className="site-container relative z-10">
+        <nav
+            className="mb-3 text-xs text-[var(--color-text-secondary)]"
+            aria-label="Breadcrumb"
+          >
+            <ol className="flex flex-wrap items-center gap-2 p-0 list-none">
+              <li>
+                <Link
+                  href="/"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+
+              <li>
+                <Link
+                  href="/work"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  Work
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+            </ol>
+          </nav>
         {/* Header — Left Aligned */}
         <div className="flex flex-col items-start text-left max-w-4xl mb-6 sm:mb-8 md:mb-10">
           <span className="text-xs sm:text-[13px] md:text-sm font-semibold tracking-[0.14em] uppercase text-[#1374DF] mb-3 sm:mb-4">

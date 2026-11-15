@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, ChevronRight } from 'lucide-react';
 import { ABOUT_HERO } from '@/constants/about';
 
 export function AboutHero() {
@@ -11,8 +11,40 @@ export function AboutHero() {
     <section className="relative w-full bg-black pt-8 pb-8 md:pt-16 md:pb-16 border-b border-[#1A1A1A]">
       {/* Background subtle field treatment */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(19,116,223,0.12),transparent_70%)] pointer-events-none" />
-
+           
       <div className="site-container relative z-10">
+        <nav
+            className="mb-3 text-xs text-[var(--color-text-secondary)]"
+            aria-label="Breadcrumb"
+          >
+            <ol className="flex flex-wrap items-center gap-2 p-0 list-none">
+              <li>
+                <Link
+                  href="/"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+
+              <li>
+                <Link
+                  href="/about"
+                  className="transition-colors duration-200 hover:text-[var(--color-brand-light)]"
+                >
+                  About
+                </Link>
+              </li>
+
+              <li aria-hidden="true">
+                <ChevronRight size={14} />
+              </li>
+            </ol>
+          </nav>
         {/* Top Header Row: Asymmetric Stage Composition */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-14 lg:mb-16">
           <div className="lg:col-span-7">

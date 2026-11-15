@@ -234,5 +234,9 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Contact',
     href: '/#contact',
   },
+  {
+    label: 'Insights',
+    href: '/insight',
+  },
 ];
 
