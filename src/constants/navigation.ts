@@ -236,7 +236,3 @@ export const NAV_ITEMS: NavItem[] = [
   },
 ];
 
-export const LANGUAGES = [
-  { code: 'EN', name: 'English', flag: '🇺🇸' },
-  { code: 'NP', name: 'Nepali', flag: '🇳🇵' },
-];
