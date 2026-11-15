@@ -16,7 +16,7 @@ export function DiscoveryBanner({
   description =
     "If your product isn't where you want it to be, 30 minutes with us might tell you why. And more often than not, we'll reveal the fix.",
   buttonLabel = 'Book a Free Discovery Call',
-  buttonHref = '#contact',
+  buttonHref = 'https://calendly.com/biratpandey9/new-meeting',
 }: DiscoveryBannerProps) {
   return (
     <section

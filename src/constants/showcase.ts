@@ -8,52 +8,51 @@ export interface ShowcaseProject {
 }
 
 export const SHOWCASE_HEADER = {
-  eyebrow: "HOW WE HELPED OTHERS SUCCEED",
-  title: "Our Creative Showcase",
+  eyebrow: "PROVEN IMPACT IN BUTWAL & BEYOND",
+  title: "Our Project Showcase",
   description:
-    "We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do.",
+    "From educational platforms and Web3 systems to full-scale corporate web solutions, discover how Nexo Linx engineers impactful digital experiences.",
 };
 
 export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
-    id: "ship-track",
-    category: "Ship Track",
-    title: "Real-time shipment tracking and delivery management at your fingertips",
+    id: "somang-korean-bhasa",
+    category: "Ed-Tech Platform",
+    title: "Somang Korean Bhasa: Interactive Korean Language & TOPIK Prep System",
     image: "/assets/showcase/project-ship-track.jpg",
-    alt: "Ship Track mobile interface design showing current shipments and delivery tracking",
-    href: "#",
+    alt: "Somang Korean Bhasa Center Learning Platform",
+    href: "https://www.nexolinx.com",
   },
   {
-    id: "gig-desk",
-    category: "Gig Desk",
-    title: "All-in-one dashboard to manage gigs, tours, venues, and payrolls.",
+    id: "gyanjyoti",
+    category: "Free Education Initiative",
+    title: "GyanJyoti: Accessible Digital E-Learning Hub for Students",
     image: "/assets/showcase/project-gig-desk.jpg",
-    alt: "Gig Desk dashboard management interface on tablet",
-    href: "#",
+    alt: "GyanJyoti E-Learning Platform",
+    href: "https://www.nexolinx.com",
   },
   {
-    id: "villa-vault",
-    category: "Villa Vault",
-    title: "Discover and book the world's finest luxury villas with ease",
+    id: "revive-hub",
+    category: "Health & Wellness",
+    title: "Revive Hub: Modern Wellness Platform & Digital Appointment Experience",
     image: "/assets/showcase/project-villa-vault.jpg",
-    alt: "Villa Vault luxury property rental web platform",
-    href: "#",
+    alt: "Revive Hub Digital Platform",
+    href: "https://www.nexolinx.com",
   },
   {
-    id: "bloom-money",
-    category: "Bloom Money",
-    title: "Empowering communities with financial solutions.",
+    id: "avante-firm",
+    category: "Web3 & Corporate",
+    title: "Avante Firm: Decentralized Web3 Portal & Modern Corporate Showcase",
     image: "/assets/showcase/project-bloom-money.jpg",
-    alt: "Bloom Money cryptocurrency wallet and mobile swap interface",
-    href: "#",
+    alt: "Avante Firm Digital Presence",
+    href: "https://www.nexolinx.com",
   },
 ];
 
 export const SHOWCASE_CTA_BOX = {
-  title: "Your project here",
-  subtitle: "The proof is in our work. Check out",
-  linkText: "Nexo Linx' case studies",
-  afterText: "to learn how",
-  href: "#contact",
+  title: "Have a project in mind?",
+  subtitle: "The proof is in our work. Explore",
+  linkText: "Nexo Linx case studies",
+  afterText: "and let's build yours next.",
+  href: "https://calendly.com/biratpandey9/new-meeting",
 };
-

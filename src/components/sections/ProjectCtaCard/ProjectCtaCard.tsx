@@ -13,12 +13,12 @@ export interface ProjectCtaCardProps {
 export function ProjectCtaCard({
   heading = 'Your project here',
   descriptionBeforeLink = 'The proof is in our work. Check out ',
-  linkText = 'ZeoPresence*, our studio',
+  linkText = 'Nexo Linx case studies',
   descriptionAfterLink =
-    ', to learn how our product development services can transform your business.',
+    ', to learn how our technology solutions can transform your business.',
   linkHref = '#showcase',
   buttonLabel = 'Book a discovery call',
-  buttonHref = '#contact',
+  buttonHref = 'https://calendly.com/biratpandey9/new-meeting',
 }: ProjectCtaCardProps) {
   return (
     <section
