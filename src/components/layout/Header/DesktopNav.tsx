@@ -8,14 +8,14 @@ interface DesktopNavProps {
   isServicesOpen: boolean;
   onMouseEnterServices: () => void;
   onMouseLeaveServices: () => void;
-  onToggleServices: () => void;
+  onCloseServices?: () => void;
 }
 
 export function DesktopNav({
   isServicesOpen,
   onMouseEnterServices,
   onMouseLeaveServices,
-  onToggleServices,
+  onCloseServices,
 }: DesktopNavProps) {
   return (
     <nav className="hidden lg:flex items-center gap-7" aria-label="Main Navigation">
@@ -28,9 +28,9 @@ export function DesktopNav({
               onMouseEnter={onMouseEnterServices}
               onMouseLeave={onMouseLeaveServices}
             >
-              <button
-                type="button"
-                onClick={onToggleServices}
+              <Link
+                href={item.href}
+                onClick={onCloseServices}
                 className={`group flex items-center gap-1.5 text-base font-medium transition-colors duration-200 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] rounded-md ${
                   isServicesOpen
                     ? 'text-[#1374DF]'
@@ -41,8 +41,7 @@ export function DesktopNav({
                 aria-controls="services-mega-menu"
               >
                 <span>{item.label}</span>
-               
-              </button>
+              </Link>
             </div>
           );
         }

@@ -36,17 +36,17 @@ export function DiscoveryBanner({
       <div className="site-container relative z-10 grid items-center gap-6 sm:gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
         <div className="flex flex-col items-start">
           {/* Heading — uses global h2 from typography.css */}
-          <h2 className="max-w-2xl tracking-tight text-xl">{heading}</h2>
+          <h2 className="max-w-2xl tracking-tight text-2xl">{heading}</h2>
 
           {/* Description — matches design-system body style */}
-          <p className="mt-3 max-w-[480px] text-md font-normal leading-relaxed tracking-tight text-black/70 sm:mt-4 sm:text-base">
+          <p className="mt-3 max-w-[480px] text-lg font-normal leading-relaxed tracking-tight text-black/70 sm:mt-4 sm:text-base">
             {description}
           </p>
 
           {/* CTA Button — consistent with ProjectCtaCard button pattern */}
           <Link
             href={buttonHref}
-            className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 whitespace-nowrap rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--color-text-dark)] transition-colors hover:bg-[var(--color-brand-light)] hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-brand-primary)]"
+            className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 whitespace-nowrap rounded-full bg-white px-6 py-3 text-md font-semibold text-[var(--color-text-dark)] transition-colors hover:bg-[var(--color-brand-light)] hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-brand-primary)]"
           >
             <span>{buttonLabel}</span>
             <span
@@ -59,28 +59,29 @@ export function DiscoveryBanner({
         </div>
 
         {/* Image — reduced to ~50% of original max size */}
-        <div className="relative mx-auto w-[min(50vw,180px)] lg:mr-0 lg:w-full lg:max-w-[200px]">
-          <div className="animate-hero-float motion-reduce:animate-none">
-            <Image
-              src="/gif-icon.webp"
-              alt=""
-              aria-hidden="true"
-              width={200}
-              height={200}
-              sizes="(min-width: 1024px) 200px, 50vw"
-              className="h-auto w-full object-contain"
-            />
-          </div>
-          <Image
-            src="/gif-icon.webp"
-            alt=""
-            aria-hidden="true"
-            width={48}
-            height={48}
-            sizes="48px"
-            className="absolute -right-1 top-0 h-[28%] w-[28%] object-contain sm:-right-2 sm:-top-1"
-          />
-        </div>
+        <div className="relative mx-auto w-[min(50vw,252px)] lg:mr-0 lg:w-full lg:max-w-[280px]">
+  <div className="animate-hero-float motion-reduce:animate-none">
+    <Image
+      src="/gif-icon.webp"
+      alt=""
+      aria-hidden="true"
+      width={280}
+      height={280}
+      sizes="(min-width: 1024px) 280px, 50vw"
+      className="h-auto w-full object-contain"
+    />
+  </div>
+
+  <Image
+    src="/gif-icon.webp"
+    alt=""
+    aria-hidden="true"
+    width={67}
+    height={67}
+    sizes="67px"
+    className="absolute -right-1 top-0 h-[28%] w-[28%] object-contain sm:-right-2 sm:-top-1"
+  />
+</div>
       </div>
     </section>
   );

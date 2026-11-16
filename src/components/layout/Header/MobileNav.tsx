@@ -71,21 +71,28 @@ export function MobileNav() {
               if (item.isServices) {
                 return (
                   <div key={item.label} className="border-b border-[#252525]/70 pb-2.5">
-                    <button
-                      type="button"
-                      onClick={() => setIsServicesExpanded(!isServicesExpanded)}
-                      className={`w-full flex items-center justify-between text-base font-semibold py-2 transition-colors ${
-                        isServicesExpanded ? 'text-[#1374DF]' : 'text-white/95 hover:text-[#1374DF]'
-                      }`}
-                      aria-expanded={isServicesExpanded}
-                    >
-                      <span>{item.label}</span>
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          isServicesExpanded ? 'rotate-180 text-[#1374DF]' : 'text-white/50'
-                        }`}
-                      />
-                    </button>
+                    <div className="flex items-center justify-between py-2">
+                      <Link
+                        href={item.href}
+                        onClick={closeMenu}
+                        className="text-base font-semibold text-white/95 hover:text-[#1374DF] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] rounded"
+                      >
+                        {item.label}
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => setIsServicesExpanded(!isServicesExpanded)}
+                        className="p-1 text-white/70 hover:text-[#1374DF] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1374DF] rounded"
+                        aria-expanded={isServicesExpanded}
+                        aria-label="Toggle Services categories"
+                      >
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform duration-200 ${
+                            isServicesExpanded ? 'rotate-180 text-[#1374DF]' : 'text-white/50'
+                          }`}
+                        />
+                      </button>
+                    </div>
 
                     {/* Services Categories */}
                     {isServicesExpanded && (

@@ -219,7 +219,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   {
     label: 'Services',
-    href: '#services',
+    href: '/services',
     isServices: true,
   },
   {
@@ -231,8 +231,12 @@ export const NAV_ITEMS: NavItem[] = [
     href: '/team',
   },
   {
+    label: 'Career',
+    href: '/careers',
+  },
+  {
     label: 'Contact',
-    href: '/#contact',
+    href: '/contact',
   },
   {
     label: 'Insights',

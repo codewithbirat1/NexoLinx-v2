@@ -7,7 +7,8 @@ import { ArrowUpRight, Clock3 } from 'lucide-react';
 import { featuredPost, recentPosts } from '@/constants/blog';
 import { BlogHeader } from '@/components/Routes/Blog/BlogHeader';
 import styles from './FrontBlog.module.css';
-
+import { BusinessContact } from '@/components/sections/BusinessContact/BusinessContact';
+import { DiscoveryBanner } from '@/components/sections/DiscoveryBanner/DiscoveryBanner';
 type CursorFootprint = {
   element: HTMLSpanElement;
   timer: number;
@@ -79,6 +80,7 @@ function resetCursorPosition(event: PointerEvent<HTMLElement>) {
 
 export default function InsightPage() {
   return (
+    <>
     <main className="relative min-h-screen bg-[#070708] pt-8 pb-8 md:pt-16 md:pb-16 text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <BlogHeader />
@@ -180,6 +182,9 @@ export default function InsightPage() {
         </div>
       </div>
     </main>
+    <BusinessContact />
+    <DiscoveryBanner />
+    </>
   );
 }
 

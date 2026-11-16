@@ -100,7 +100,7 @@ export function Header() {
               isServicesOpen={isServicesOpen}
               onMouseEnterServices={openServicesMenu}
               onMouseLeaveServices={closeServicesMenuWithDelay}
-              onToggleServices={toggleServicesMenu}
+              onCloseServices={closeServicesMenuImmediately}
             />
           </div>
         </div>

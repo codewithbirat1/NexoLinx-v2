@@ -51,3 +51,4 @@ export const FAQ_ITEMS: FaqItem[] = [
       'We focus on product-first thinking, clean architecture, and measurable ROI rather than generic templates. We combine technical rigor (Next.js, TypeScript, cloud deployments) with high-end modern design, complete transparency, and dedicated post-launch support.',
   },
 ];
+

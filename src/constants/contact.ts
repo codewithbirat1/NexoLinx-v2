@@ -12,6 +12,21 @@ export interface ContactHeaderData {
   title: string;
   description: string;
 }
+export const CONTACT_HERO = {
+  badge: 'Let’s Connect',
+  headline: 'Have an idea? Let’s make it happen.',
+  description:
+    'Whether you have a project in mind, need a digital solution, or simply want to explore possibilities, we’re here to help. Tell us what you’re thinking, and let’s create something meaningful together.',
+  primaryCta: {
+    label: 'Start a project',
+    href: '#contact-form',
+  },
+  secondaryCta: {
+    label: 'Explore our work',
+    href: '/work',
+  },
+};
+
 
 export const CONTACT_HEADER: ContactHeaderData = {
   eyebrow: 'Contact Us',
