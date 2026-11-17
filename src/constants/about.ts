@@ -42,9 +42,9 @@ export const ABOUT_HERO = {
 export const ABOUT_BELIEF = {
   headline: 'Built on a simple belief about how great products should be designed.',
   paragraphs: [
-    'Digital experiences shouldn’t just look polished—they must drive measurable commercial and operational outcomes. We combine strategic design with high-performance engineering to eliminate friction.',
-    'At Nexo Linx, we discard bloated agency playbooks. By collaborating closely as an agile extension of your team, we convert complex ideas into intuitive, scalable software that users love.',
-    'Every pixel, line of code, and marketing funnel is crafted to stand the test of time and scale effortlessly as your user base expands.',
+   'Digital experiences should do more than look good—they should help businesses grow. We combine thoughtful design and reliable technology to solve real problems.',
+'At Nexo Linx, great work starts with collaboration. We work closely with your team, understand your goals, and turn complex ideas into simple, useful digital products that people enjoy.',
+'Every detail matters, from the first idea to launch. We build reliable digital experiences that support your business today and grow alongside it, naturally.'
   ],
 };
 
